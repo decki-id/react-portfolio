@@ -1,3 +1,12 @@
+.about-page {
+    .text-zone {
+        @media (max-width: 991px) {
+            left: 15%;
+            width: 80%;
+        }
+    }
+}
+
 .stage-cube-cont {
     width: 50%;
     height: 100%;
@@ -7,6 +16,10 @@
     position: absolute;
     right: 0;
     overflow: hidden;
+
+    @media (max-width: 991px) {
+        display: none;
+    }
 }
 
 .cubespinner {

@@ -6,6 +6,11 @@
         transform: translateY(-50%);
         width: 40%;
         max-height: 90%;
+
+        @media (max-width: 991px) {
+            left: 15%;
+            width: 100%;
+        }
     }
 
     h1 {
@@ -76,5 +81,21 @@
             background: #ffd700;
             color: #333;
         }
+    }
+}
+
+.logo-container {
+    z-index: 0;
+    position: absolute;
+    width: 400px;
+    height: 630px;
+    top: 0;
+    bottom: 0;
+    right: 15%;
+    left: auto;
+    margin: auto;
+
+    @media (max-width: 991px) {
+        opacity: 0;
     }
 }
