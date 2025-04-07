@@ -10,7 +10,7 @@ const Sidebar = () => (
   <div className="nav-bar">
     <Link className="logo" to="/">
       <img src={LogoS} alt="logo" />
-      <img src={LogoSubtitle} alt="slobodan" />
+      <img src={LogoSubtitle} alt="slobodan" id="logo-sub" />
     </Link>
     <nav>
       <NavLink exact="true" activeclassname="active" to="/" end>
