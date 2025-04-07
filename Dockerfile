@@ -22,6 +22,8 @@ ENV NODE_ENV=production
 
 ENV REACT_APP_ENV=prod
 
+ENV TZ=Asia/Jakarta
+
 RUN npm i -g pm2
 
 COPY --from=build /slobodan/build ./build
