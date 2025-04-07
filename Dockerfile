@@ -24,6 +24,10 @@ ENV REACT_APP_ENV=prod
 
 ENV TZ=Asia/Jakarta
 
+RUN apk update && apk add --no-cache tzdata
+
+RUN cp /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 RUN npm i -g pm2
 
 COPY --from=build /slobodan/build ./build
