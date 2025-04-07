@@ -1,11 +1,11 @@
 module.exports = {
   apps: [
     {
-      name: "slobodan-portfolio",
+      name: "slobodan",
       script: "serve",
       env: {
         PM2_SERVE_PATH: "./build",
-        PM2_SERVE_PORT: 1001,
+        PM2_SERVE_PORT: 3000,
       },
     },
   ],
